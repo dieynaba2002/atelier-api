@@ -1,0 +1,14 @@
+<!-- liste-article.component.html -->
+<div class="container mt-4">
+    <div class="row row-gap-4 ">
+        <div *ngFor="let article of articles" class="card m-auto" style="width: 18rem; min-height: 400px; max-height: 400px"  >
+            <img [src]="article.thumbnail" class="card-img-top" alt="">
+            <div class="card-body">
+                <h5 class="card-title">{{ article.title }}</h5>
+                <p class="card-text">{{ article.body }}</p>
+                <p class="card-text">Article publié par : {{ article.userId }}</p>
+                <button class="btn btn-primary">Voir plus</button>
+            </div>
+        </div>   
+    </div>
+</div>
